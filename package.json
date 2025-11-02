@@ -1,0 +1,19 @@
+{
+  "name": "pratik-portfolio-backend",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "@google/genai": "^0.14.0",
+    "express": "^4.19.2",
+    "mongoose": "^8.4.4",
+    "openai": "^4.0.0"
+  }
+}

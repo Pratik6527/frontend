@@ -1,0 +1,110 @@
+/* style.css */
+
+/* 1. IMPORT FONT */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+/* 2. CSS VARIABLES */
+:root {
+  --accent1: #06b6d4; /* cyan-500 */
+  --accent2: #0ea5e9; /* sky-500 */
+  --bg: #071128;
+  --muted: #94a3b8; /* slate-400 */
+}
+
+/* 3. BASE STYLES */
+body {
+  margin: 0;
+  font-family: 'Inter', system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial;
+  background: linear-gradient(180deg, #020617 0%, #071128 60%);
+}
+
+/* *
+ * 4. YOUR CUSTOM CLASSES (NO @apply)
+ * */
+
+.glassmorphism {
+  background: rgba(15, 23, 42, 0.6); /* bg-slate-900/60 */
+  -webkit-backdrop-filter: blur(12px); 
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.gradient-text {
+  background: linear-gradient(90deg, var(--accent2), var(--accent1));
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.nav-link {
+  color: #cbd5e1; /* slate-300 */
+  text-decoration: none;
+  padding: 0.25rem 0.5rem; /* px-2 py-1 */
+  font-weight: 500; /* font-medium */
+  transition: color 0.3s ease-in-out;
+}
+.nav-link:hover {
+  color: #38bdf8; /* sky-400 */
+}
+
+.btn-primary {
+  color: white;
+  font-weight: 600; /* font-semibold */
+  padding: 0.5rem 1.25rem; /* px-5 py-2 */
+  border-radius: 0.5rem; /* rounded-lg */
+  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1); /* shadow-lg */
+  transition: all 0.3s ease-in-out;
+  background: linear-gradient(90deg, var(--accent2), var(--accent1));
+  text-decoration: none; /* In case you use <a> tags */
+  display: inline-block; /* For <a> tags */
+  border: none; /* For <button> tags */
+  cursor: pointer;
+}
+.btn-primary:hover {
+  opacity: 0.9;
+}
+.btn-primary:focus {
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+  --tw-ring-color: #7dd3fc; /* ring-sky-300 */
+  box-shadow: 0 0 0 4px var(--tw-ring-color);
+}
+
+.btn-ghost {
+  color: #cbd5e1; /* slate-300 */
+  font-weight: 600; /* font-semibold */
+  padding: 0.5rem 1.25rem; /* px-5 py-2 */
+  border-radius: 0.5rem; /* rounded-lg */
+  border: 1px solid rgba(51, 65, 85, 0.8); /* border-slate-700/80 */
+  transition: all 0.3s ease-in-out;
+  text-decoration: none; /* In case you use <a> tags */
+  display: inline-block; /* For <a> tags */
+  background: none;
+  cursor: pointer;
+}
+.btn-ghost:hover {
+  background-color: #334155; /* hover:bg-slate-700 */
+}
+.btn-ghost:focus {
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+  --tw-ring-color: #64748b; /* ring-slate-500 */
+  box-shadow: 0 0 0 4px var(--tw-ring-color);
+}
+
+.service-card {
+  display: block;
+  padding: 0.75rem; /* p-3 */
+  border-radius: 0.5rem; /* rounded-lg */
+  color: #e2e8f0; /* slate-200 */
+  text-decoration: none;
+  background: rgba(255, 255, 255, 0.02);
+  transition: background-color 0.3s ease-in-out;
+}
+.service-card:hover {
+  background-color: #1e293b; /* hover:bg-slate-800 */
+}
+
+#form-status:empty {
+  display: none;
+}

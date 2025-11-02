@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Admin — Pratik</title>
+  <script src="https://cdn.tailwindcss.com"></script><link href="style.css" rel="stylesheet" />
+</head>
+<body class="bg-slate-900 text-slate-200">
+  <main class="container mx-auto px-6 py-12">
+    <h1 class="text-2xl font-bold">Admin Console</h1>
+    <div id="auth-area" class="mt-6 max-w-md">
+     <div id="login-form" class="space-y-3 bg-slate-800 p-6 rounded">
+  <input id="admin-pass" placeholder="Password" type="password" class="w-full p-3 bg-slate-900 rounded" />
+  <div class="flex gap-2">
+    <button id="admin-login" class="btn-primary">Login</button>
+    <button id="admin-logout" class="btn-ghost hidden">Logout</button>
+  </div>
+</div>
+
+      <div id="admin-panel" class="hidden mt-6">
+        <h2 class="text-xl font-semibold">Messages</h2>
+        <div id="messages-list" class="mt-4 space-y-4"></div>
+      </div>
+    </div>
+  </main>
+  
+  <footer class="border-t border-slate-800 py-8 mt-12 text-center text-slate-400">
+    <p>&copy; 2025 Pratik Mondal — Built with care • <a href="admin.html" class="text-sky-300">Admin</a></p>
+  </footer>
+
+  <script type="module" src="main.js"></script>
+  <script src="https://cdn.tailwindcss.com"></script>
+</body>
+</html>

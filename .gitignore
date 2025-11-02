@@ -1,0 +1,10 @@
+# Ignore local build and dependencies
+node_modules/
+.DS_Store
+
+# Ignore system files
+Thumbs.db
+
+# No backend files
+.env
+*.log

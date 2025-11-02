@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Pratik Mondal — Full Stack / Agency</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="style.css" rel="stylesheet" />
+</head>
+<body class="bg-gradient-to-b from-slate-950 via-slate-900 to-black text-slate-100">
+  <!-- Navbar (shared) -->
+  <header class="fixed w-full z-40 glassmorphism">
+  <div class="container mx-auto flex items-center justify-between p-4">
+    <a href="index.html" class="flex items-center gap-3">
+      <img src="Logo.png" alt="logo" class="h-10 w-10 rounded-md" />
+      <span class="font-bold text-xl tracking-tight text-white">Pratik Mondal</span>
+    </a>
+    <nav class="hidden md:flex gap-6">
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="about.html" class="nav-link">About</a> <a href="services.html" class="nav-link">Services</a>
+      <a href="projects.html" class="nav-link">Projects</a>
+      <a href="ai.html" class="nav-link">AI Tools</a>
+      <a href="contact.html" class="nav-link">Contact</a>
+    </nav>
+    <a href="contact.html" class="hidden md:inline-block btn-primary">Hire Me</a>
+    <button id="mobile-toggle" class="md:hidden text-slate-300">☰</button>
+  </div>
+</header>
+
+  <!-- Hero -->
+  <main class="pt-28">
+    <section class="container mx-auto px-6 py-20 grid md:grid-cols-2 gap-12 items-center">
+      <div>
+        <h1 class="text-4xl md:text-6xl font-extrabold gradient-text">I build modern, scalable web apps & brand sites</h1>
+        <p class="mt-6 text-slate-300 max-w-2xl">
+          Full stack developer & website studio. I craft production-ready frontends, robust backends, and delightful UX.
+        </p>
+        <div class="mt-8 flex gap-4">
+          <a href="contact.html" class="btn-primary">Work with me</a>
+          <a href="projects.html" class="btn-ghost">See projects</a>
+        </div>
+      </div>
+      <div class="relative">
+        <!-- stylized card / quick services -->
+        <div class="p-8 rounded-2xl glassmorphism shadow-xl">
+          <h3 class="font-semibold text-sky-300">Featured Services</h3>
+          <ul class="mt-4 space-y-3 text-slate-300">
+            <li>Custom Web Apps (React / Node / PostgreSQL)</li>
+            <li>Brand Websites & Landing Pages</li>
+            <li>SEO & Performance Optimization</li>
+          </ul>
+          <div class="mt-6 grid grid-cols-2 gap-3">
+            <a href="services.html#web" class="service-card">Web Development</a>
+            <a href="services.html#ai" class="service-card">AI Integrations</a>
+            <a href="services.html#design" class="service-card">Design & Branding</a>
+            <a href="services.html#support" class="service-card">Maintenance</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- small projects preview -->
+    <section class="container mx-auto px-6 pb-20">
+      <h2 class="text-2xl font-bold gradient-text">Selected Projects</h2>
+      <div id="projects-preview" class="mt-8 grid sm:grid-cols-2 lg:grid-cols-3 gap-6"></div>
+      <div class="mt-6">
+        <a href="projects.html" class="btn-ghost">View full portfolio</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="border-t border-slate-800 py-8 mt-12 text-center text-slate-400">
+    <p>&copy; 2025 Pratik Mondal — Built with care • <a href="admin.html" class="text-sky-300">Admin</a></p>
+  </footer>
+
+  <script type="module" src="main.js"></script>
+  <script src="https://cdn.tailwindcss.com"></script>
+</body>
+</html>

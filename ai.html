@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/><title>AI Tools — Pratik</title>
+  <script src="https://cdn.tailwindcss.com"></script><link href="style.css" rel="stylesheet" />
+</head>
+<body class="bg-slate-950 text-slate-100">
+   <header class="fixed w-full z-40 glassmorphism">
+    <div class="container mx-auto flex items-center justify-between p-4">
+      <a href="index.html" class="flex items-center gap-3">
+        <img src="Logo copy.png" alt="logo" class="h-10 w-10 rounded-md" /> 
+        <span class="font-bold text-xl tracking-tight text-white">Pratik Mondal</span>
+      </a>
+      <nav class="hidden md:flex gap-6">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link">About</a> <a href="services.html" class="nav-link">Services</a>
+        <a href="projects.html" class="nav-link">Projects</a>
+        <a href="ai.html" class="nav-link">AI Tools</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+      <a href="contact.html" class="hidden md:inline-block btn-primary">Hire Me</a>
+      <button id="mobile-toggle" class="md:hidden text-slate-300">☰</button>
+    </div>
+  </header>
+
+  <main class="pt-28 container mx-auto px-6 py-12">
+    <h1 class="text-3xl font-bold gradient-text">AI Tools</h1>
+
+    <section class="mt-8 grid lg:grid-cols-2 gap-8">
+      <div class="glassmorphism p-6 rounded-xl">
+        <h3 class="text-xl font-semibold">AI Chat Assistant</h3>
+        <div id="chat" class="mt-4 flex flex-col gap-3">
+          <div id="chat-log" class="max-h-72 overflow-auto space-y-2 p-2 bg-slate-900 rounded"></div>
+          <div class="mt-3 flex gap-2">
+            <input id="chat-input" class="flex-1 px-4 py-2 rounded bg-slate-900" placeholder="Ask about web projects, pricing, or tech..." />
+            <button id="chat-send" class="btn-primary">Send</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="glassmorphism p-6 rounded-xl">
+  <h3 class="text-xl font-semibold">AI Quote Estimator</h3>
+  <p class="text-slate-300 mt-2">Describe the project briefly (pages, ecommerce, integrations) and get an instant estimate.</p>
+  
+  <textarea id="quote-input" rows="4" class="mt-3 w-full rounded p-3 bg-slate-900" placeholder="e.g., A 5-page business website with a blog and contact form..."></textarea>
+  
+  <div class="mt-3 flex gap-2">
+    <button id="quote-btn" class="btn-primary">Estimate Price</button>
+  </div>
+  <div id="quote-output" class="mt-4 text-slate-300"></div>
+</div>
+    </section>
+  </main>
+  <footer class="border-t border-slate-800 py-8 mt-12 text-center text-slate-400">
+    <p>&copy; 2025 Pratik Mondal — Built with care • <a href="admin.html" class="text-sky-300">Admin</a></p>
+  </footer>
+
+  <script type="module" src="main.js"></script>
+  <script src="https://cdn.tailwindcss.com"></script>
+</body>
+</html>
